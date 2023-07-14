@@ -1,0 +1,52 @@
+public class Other_Basic_Logics {
+
+	// find a average of given number
+
+	double average(double a, double b, double c, double d) {
+		double average = (a + b + c + d) / 4;
+		System.out.println("average of given number = " + average);
+		return average;
+	}
+
+	// find sum of given number
+
+	double sum(double a, double b, double c, double d) {
+		double sum = a + b + c + d;
+		System.out.println("sum of the number = " + sum);
+		return sum;
+	}
+
+	// how many square in rectangle
+
+	double square(double a, double l, double b) {
+		double areaofSquare = a * a;
+		System.out.println("area o fSquare = " + areaofSquare);
+		double areaofrectangle = l * b;
+		System.out.println("area of rectangle = " + areaofrectangle);
+		double numberofsquareinrectanle = areaofrectangle / areaofSquare;
+		System.out.println("number of square in rectanle = " + numberofsquareinrectanle);
+		return numberofsquareinrectanle;
+	}
+
+	// find small number in given number(1,8,9,4,5,2)
+
+	int a = 1, b = 8, c = 9, d = 4;
+
+	int findsmalnumber() {
+		int x = (a < b ? a : b);
+		int y = (x < c ? x : c);
+		int z = (y < d ? y : d);
+
+		System.out.println("small number of given number  " + z);
+		return x;
+
+	}
+
+	public static void main(String[] args) {
+		Other_Basic_Logics logic = new Other_Basic_Logics();
+		logic.average(55, 65, 75, 85);
+		logic.sum(78, 250, 3, 8);
+		logic.square(20, 100, 50);
+		logic.findsmalnumber();
+	}
+}
